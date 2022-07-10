@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.navbar{
+    width: 100%;
+    background-color: #44bd32;
+    padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar nav .nav_ul ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navbar nav .nav_ul ul li .nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.navbar nav .nav_ul ul li .nav-link:hover{
+    color: gold;
+}
+
+.navbar nav .logo{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: 0.3 ease;
+}
+
+.navbar nav .logo:hover{
+    color: lightgray;
+}
+
+
+/* dropdown section */
+
+.dropdown_menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0px!important;
+}
+
+
+
+.nav_ul ul .drop_li{
+    position: relative;
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.nav_ul ul .drop_li:hover .dropdown_menu{
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    background-color: #44bd32;
+    display: block;
+}
+
+.nav_ul ul .drop_li:hover .dropdown_menu ul li{
+    width: 180px;
+    padding: 10px 5px!important;
+}
+
+.nav_ul ul .drop_li:hover .dropdown_menu ul li .drop_link{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+
+}
+
+.nav_ul ul .drop_li:hover .dropdown_menu ul li .drop_link:hover{
+ color: gold;
+}
+/* end of navbar */
+
+
+
+
+.main_banner{
+    width: 100%;
+    background-image:url(./img/banner.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* end of first banner */
+
+
+ .data-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+} 
+
+.storage-list{
+    width: 32%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.storage-list .fa-question{
+    font-size: 4rem;
+    background-color: #3498db;
+    color: white;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.storage-list h5{
+    font-size: 1.7rem;
+}
+
+.storage-list h6{
+    font-size: 1rem;
+}
+
+
+.main-data{
+    background-color: #34e7e4;
+    padding: 25px 0px;
+}
+
+.main-data h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+/* end of main data and storage */
+
+
+
+
+
+.singledata{
+    margin-top: 60px;
+    width: 100%;
+}
+
+.singledata .name{
+    text-align: center;
+    padding: 30px 0px 60px 0px;
+    text-decoration: underline;
+}
+
+.singledata_list{
+    width: 80%;
+    margin: auto;
+}
+
+.singledata_list .single_info img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.singledata_list .single_info{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.singledata_list .single_info p{
+    margin-bottom: 15px;
+}
+
+.singledata p{
+    line-height: 1.4rem;
+    text-align: justify;
+}
+
+.content .link{
+    color: black;
+    text-transform: capitalize;
+    font-size: 2.3rem;
+    margin: 23px 0px!important;
+    display: block;
+}
+/* end of singledata */
+
+
+
+.info{
+    width: 100%;
+    background-image: linear-gradient(90deg,#40739e, #487eb0);
+    text-align: center;
+    padding: 70px 0px;
+    color: white;
+}
+
+.info h4{
+    color: white;
+    font-size: 2rem;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 8px;
+    border-bottom: 5px solid gold;
+}
+
+
+.info_list{
+display: flex;
+justify-content: space-between;
+width: 80%;
+margin: 45px auto 0px auto;
+
+}
+
+.info_list .info_topic img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+
+}
+
+.info_list .info_topic{
+    background-color: white;
+    width: 32%;
+    text-align: left;
+}
+
+.info_list .info_topic h5{
+    color: #22a6b3;
+    font-size: 1.5rem;
+    border-bottom: 5px solid gold;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.info_list .info_topic .info_content{
+    padding: 30px;
+
+}
+
+.info_list .info_topic .info_content p{
+    color: black;
+    text-align: justify;
+    margin-top: 15px;
+    line-height: 23px;
+}
+/* end of info */
+
+
+
+/* .features{
+    width: 100%;
+    background-image: linear-gradient(to bottom, #60a3bc,#40739e);
+    text-align: center;
+    padding: 70px 0px;
+    color: white;
+}
+
+.features .feature_topic{
+    width: 80%;
+    margin: auto;
+}
+
+.feature_topic{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature_topic .feature_list{
+    width: 60%;
+}
+
+.feature_topic .feature_img{
+    width: 30%;
+}
+
+.feature_img img{
+    width: 100%;
+} */
+
+
+.main-feature{
+    width: 100%;
+    background-image: linear-gradient(to bottom, #60a3bc,#40739e);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 650px;
+}
+
+.main-feature .features{
+    width: 60%;
+    padding: 70px 0px;
+    color: white;
+}
+
+.main-feature .feature_img{
+    width: 30%;
+}
+
+.main-feature .feature_img img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+.features .features_lists h4{
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 8px;
+    border-bottom: 5px solid gold;
+}
+
+.main-feature .features .features_lists{
+    width: 84%;
+    margin-left: auto;
+}
+
+.feature_list h5{
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+.inner_Features .fea{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.inner_Features .fea .fa-circle{
+    margin-right: 10px;
+}
+/* end of features */
+
+
+.footer_Web{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.footer_Web .footer_list{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+/* end of footer */
